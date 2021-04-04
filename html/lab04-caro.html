@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title>Đánh ca rô chơi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script type="text/javascript" src="/2021COMP130305-4201754170/jquery/jquery.min.js"></script>
+
+
+</head>
+
+<style>
+    body {
+        margin: 0 auto;
+        width: 1000px;
+    }
+    
+    #container {
+        margin-left: 330px;
+    }
+    
+    td {
+        height: 50px;
+        width: 50px;
+        border: solid black 1px;
+    }
+    
+    table {
+        border: black solid 4px;
+        border-radius: 20px;
+    }
+    
+    #goc1 {
+        border-top-left-radius: 15px;
+    }
+    
+    #goc2 {
+        border-top-right-radius: 15px;
+    }
+    
+    #goc3 {
+        border-bottom-left-radius: 15px;
+    }
+    
+    #goc4 {
+        border-bottom-right-radius: 15px;
+    }
+    
+    td:nth-child(odd) {
+        background-color: rgb(255, 242, 58);
+    }
+    
+    td:nth-child(even) {
+        background-color: rgb(255, 211, 91);
+    }
+    
+    td:hover {
+        background-color: tomato;
+    }
+    
+    #combo-btn {
+        margin-bottom: 15px;
+    }
+    
+    button {
+        width: 100px;
+        height: 30px;
+        font-size: 19px;
+        font-weight: bold;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <span style="font-size: 50px; font-family: Kristen ITC; margin-left: 90px;">Mini Game</span>
+        <div id="combo-btn" style="margin-left: 68px">
+            <button type="button" id="btnShow">Hiện</button>
+            <button type="button" id="btnHide">Ẩn</button>
+            <button type="button" id="btnToggle">Ẩn / Hiện</button>
+        </div>
+        <table cellspacing="0 ">
+            <tr>
+                <td id="goc1"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="goc2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="goc3"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="goc4"></td>
+            </tr>
+        </table>
+
+        <script>
+            $("#btnShow").click(function() {
+                $("table").show(1000);
+            });
+            $("#btnHide").click(function() {
+                $("table").hide(1000);
+            });
+            $("#btnToggle").click(function() {
+                $("table").toggle(1000);
+            });
+
+            var value = "X";
+            $("td").click(function() {
+                if ($(this).html() == "") {
+                    $(this).html(value);
+                    value = value == "X" ? "O" : "X";
+                }
+                $(this).css({
+                    "color": "black"
+                });
+                $(this).css({
+                    "font-size": "40px"
+                });
+                $(this).css({
+                    "font-weight": "bolder"
+                });
+                $(this).css({
+                    "text-align": "center"
+                });
+                $(this).css({
+                    "font-family": "SimSun"
+                });
+
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
