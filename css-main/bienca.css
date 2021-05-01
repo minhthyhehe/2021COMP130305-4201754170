@@ -1,0 +1,614 @@
+body {
+    margin: 0 auto;
+}
+
+#bien-ca {
+    width: 100%;
+    height: 500px;
+    background-image: url(../resources-lab02//images/small-square2.gif);
+    background-size: 20px;
+    position: absolute;
+}
+
+#tho-lan-1 {
+    width: 299px;
+    height: 147px;
+    background-image: url(../resources-lab02//images/diver1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    animation-name: dichuyen-1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+#tho-lan-2 {
+    width: 299px;
+    height: 147px;
+    background-image: url(../resources-lab02//images/diver2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 70px;
+    top: 100px;
+    animation-name: dichuyen-2;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-out;
+}
+
+#tho-lan-3 {
+    width: 299px;
+    height: 147px;
+    background-image: url(../resources-lab02//images/diver3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    animation-name: dichuyen-3;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+
+#ca-map {
+    width: 250px;
+    height: 192px;
+    background-image: url(../resources-lab02//images/shark.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    animation-name: ca-map-boi;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in;
+}
+
+#rua {
+    width: 172px;
+    height: 93px;
+    background-image: url(../resources-lab02//images/turtle.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    animation-name: rua-bo;
+    animation-duration: 65s;
+    animation-iteration-count: infinite;
+}
+
+#ca-vang {
+    width: 125px;
+    height: 99px;
+    background-image: url(../resources-lab02//images/goldFishSchool.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 650px;
+    top: 150px;
+    animation-name: ca-vang-boi;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+}
+
+#bot-bien {
+    width: 233px;
+    height: 104px;
+    background-image: url(../resources-lab02//images/faintSchool.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 100px;
+    top: 350px;
+    animation-name: botbien-bay;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dichuyen-1 {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 50px;
+        transform: translateY(100px);
+    }
+    20% {
+        left: 200px;
+        transform: translateY(250px);
+    }
+    30% {
+        left: 500px;
+        transform: translateY(350px);
+    }
+    40% {
+        left: 800px;
+        transform: translateY(200px);
+    }
+    50% {
+        left: 1230px;
+        transform: translateY(0px) translateY(100px);
+    }
+    60% {
+        left: 1230px;
+        transform: rotateY(180deg) translateY(100px);
+    }
+    70% {
+        left: 800px;
+        transform: rotateY(180deg) translateY(230px);
+    }
+    80% {
+        left: 600px;
+        transform: rotateY(180deg) translateY(200px);
+    }
+    90% {
+        left: 0px;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes dichuyen-2 {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 100px;
+        transform: translateY(-100px);
+    }
+    20% {
+        left: 250px;
+        transform: translateY(0px);
+    }
+    30% {
+        left: 600px;
+        transform: translateY(200px);
+    }
+    40% {
+        left: 900px;
+        transform: translateY(250px);
+    }
+    45% {
+        left: 1200px;
+        transform: translateY(0px) translateY(150px);
+    }
+    50% {
+        left: 1200px;
+        transform: rotateY(180deg) translateY(150px);
+    }
+    60% {
+        left: 800px;
+        transform: rotateY(180deg) translateY(230px);
+    }
+    70% {
+        left: 600px;
+        transform: rotateY(180deg) translateY(200px);
+    }
+    80% {
+        left: 400px;
+        transform: rotateY(180deg) translateY(150px);
+    }
+    90% {
+        left: 0px;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes dichuyen-3 {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 200px;
+        transform: translateY(-80px);
+    }
+    20% {
+        left: 350px;
+        transform: translateY(-250px);
+    }
+    30% {
+        left: 600px;
+        transform: translateY(-330px);
+    }
+    40% {
+        left: 900px;
+        transform: translateY(0px);
+    }
+    45% {
+        left: 1230px;
+        transform: translateY(0px) translateY(-100px);
+    }
+    50% {
+        left: 1230px;
+        transform: rotateY(180deg) translateY(-100px);
+    }
+    60% {
+        left: 800px;
+        transform: rotateY(180deg) translateY(-220px);
+    }
+    70% {
+        left: 600px;
+        transform: rotateY(180deg) translateY(-230px);
+    }
+    80% {
+        left: 400px;
+        transform: rotateY(180deg) translateY(-350px);
+    }
+    90% {
+        left: 0px;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes ca-map-boi {
+    0% {
+        left: 20px;
+    }
+    15% {
+        left: 500px;
+        transform: translateY(-50px);
+    }
+    30% {
+        left: 1280px;
+        transform: translateY(80px);
+    }
+    40% {
+        left: 1280px;
+        transform: rotateY(180deg) translateY(80px);
+    }
+    65% {
+        left: 300px;
+        transform: rotateY(180deg) translateY(140px);
+        ;
+    }
+    80% {
+        left: 20px;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: 20px;
+    }
+}
+
+@keyframes rua-bo {
+    0% {
+        left: 800px;
+    }
+    10% {
+        left: 900px;
+        transform: translateY(-80px);
+    }
+    15% {
+        left: 1150px;
+        transform: translateY(-250px);
+    }
+    20% {
+        left: 1350px;
+        transform: translateY(-250px);
+    }
+    25% {
+        left: 1350px;
+        transform: rotateY(180deg) translateY(-250px);
+    }
+    30% {
+        left: 1350px;
+        transform: rotateY(180deg) translateY(-250px);
+    }
+    35% {
+        left: 1000px;
+        transform: rotateY(180deg) translateY(-150x);
+    }
+    40% {
+        left: 800px;
+        transform: rotateY(180deg) translateY(-100x);
+    }
+    45% {
+        left: 500px;
+        transform: rotateY(180deg) translateY(0);
+    }
+    50% {
+        left: 500px;
+        transform: translateY(0);
+    }
+    55% {
+        left: 850px;
+        transform: translateY(-100px);
+    }
+    60% {
+        left: 1230px;
+        transform: translateY(-100px);
+    }
+    65% {
+        left: 1230px;
+        transform: rotateY(180deg) translateY(-100px);
+    }
+    70% {
+        left: 950px;
+        transform: rotateY(180deg) translateY(100px);
+    }
+    75% {
+        left: 650px;
+        transform: rotateY(180deg) translateY(-230px);
+    }
+    80% {
+        left: 400px;
+        transform: rotateY(180deg) translateY(-280px);
+    }
+    85% {
+        left: 0px;
+        transform: rotateY(180deg) translateY(-100px);
+    }
+    90% {
+        left: 0px;
+        transform: rotateY(0) translateY(-100px);
+    }
+    95% {
+        left: 400px;
+        transform: translateY(-50px);
+    }
+    100% {
+        left: 800px;
+    }
+}
+
+@keyframes ca-vang-boi {
+    0% {
+        left: 650px;
+    }
+    11.5% {
+        left: 700px;
+        transform: translateY(20px);
+    }
+    13% {
+        left: 750px;
+        transform: translateY(0px);
+    }
+    14.5% {
+        left: 800px;
+        transform: translateY(20px);
+    }
+    16% {
+        left: 850px;
+        transform: translateY(0px);
+    }
+    17.5% {
+        left: 900px;
+        transform: translateY(20px);
+    }
+    19% {
+        left: 950px;
+        transform: translateY(0px);
+    }
+    20.5% {
+        left: 1000px;
+        transform: translateY(20px);
+    }
+    22% {
+        left: 1050px;
+        transform: translateY(0px);
+    }
+    23.5% {
+        left: 1100px;
+        transform: translateY(20px);
+    }
+    25% {
+        left: 1150px;
+        transform: translateY(0px);
+    }
+    26.5% {
+        left: 1200px;
+        transform: translateY(20px);
+    }
+    28% {
+        left: 1250px;
+        transform: translateY(0px);
+    }
+    29.5% {
+        left: 1300px;
+        transform: translateY(20px);
+    }
+    31% {
+        left: 1350px;
+        transform: translateY(0px);
+    }
+    32.5% {
+        left: 1400px;
+        transform: translateY(20px);
+    }
+    34% {
+        left: 1400px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    35.5% {
+        left: 1350px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    37% {
+        left: 1300px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    38.5% {
+        left: 1250px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    40% {
+        left: 1200px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    41.5% {
+        left: 1150px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    43% {
+        left: 1100px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    44.5% {
+        left: 1050px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    46% {
+        left: 1000px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    47.5% {
+        left: 950px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    49% {
+        left: 900px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    51.5% {
+        left: 850px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    53% {
+        left: 800px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    54.5% {
+        left: 750px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    56% {
+        left: 700px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    57.5% {
+        left: 650px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    59% {
+        left: 600px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    60.5% {
+        left: 550px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    62% {
+        left: 500px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    63.5% {
+        left: 450px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    65% {
+        left: 400px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    66.5% {
+        left: 350px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    68% {
+        left: 300px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    69.5% {
+        left: 250px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    71% {
+        left: 200px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    72.5% {
+        left: 150px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    74% {
+        left: 100px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    75.5% {
+        left: 50px;
+        transform: rotateY(180deg) translateY(0px);
+    }
+    77% {
+        left: 0px;
+        transform: rotateY(180deg) translateY(20px);
+    }
+    78.5% {
+        left: 0px;
+        transform: translateY(20px);
+    }
+    80% {
+        left: 50px;
+        transform: translateY(0px);
+    }
+    81.5% {
+        left: 100px;
+        transform: translateY(20px);
+    }
+    83% {
+        left: 150px;
+        transform: translateY(0px);
+    }
+    84.5% {
+        left: 200px;
+        transform: translateY(20px);
+    }
+    86% {
+        left: 250px;
+        transform: translateY(0px);
+    }
+    87.5% {
+        left: 300px;
+        transform: translateY(20px);
+    }
+    89% {
+        left: 350px;
+        transform: translateY(0px);
+    }
+    90.5% {
+        left: 400px;
+        transform: translateY(20px);
+    }
+    92% {
+        left: 450px;
+        transform: translateY(0px);
+    }
+    93.5% {
+        left: 500px;
+        transform: translateY(20px);
+    }
+    95% {
+        left: 550px;
+        transform: translateY(0px);
+    }
+    96.5% {
+        left: 600px;
+        transform: translateY(20px);
+    }
+    100% {
+        left: 650px;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes botbien-bay {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: 700px;
+    }
+    50% {
+        left: 1300px;
+    }
+    75% {
+        left: 700px;
+    }
+    100% {
+        left: 0px;
+    }
+}
